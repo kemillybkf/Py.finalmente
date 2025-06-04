@@ -1,0 +1,15 @@
+alunos = ('Kemilly', 'Erik', 'Yuri', 'Lucas', 'Thamiris')
+print('-'*40)
+print(alunos[0])
+print(alunos[1])
+print(alunos[2])
+print(alunos[3])
+print(alunos[4])
+print('-'*40)
+print(type(alunos))
+print('Ao todo obtemos {} alunos' .format(len(alunos)))
+print('-'*40)
+
+aluno = ['Kemilly', 'Erik', 'Yuri', 'Lucas', 'Thamiris']
+print('-'*40)
+aluno.append('Eduardo')
