@@ -5,7 +5,8 @@ tipo = {
 'profissão' :'ADS',
 }
 
-print(tipo[nome])
-print(tipo[sobrenome])
-print(tipo[idade])
-print(tipo[profissão])
+print('Os dados são: ')
+print(tipo['nome'])
+print(tipo['sobrenome'])
+print(tipo['idade'])
+print(tipo['profissão'])
