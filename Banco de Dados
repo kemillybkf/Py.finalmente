@@ -1,0 +1,33 @@
+create database aluno
+default character set utf8
+default collate utf8_general_ci;
+
+use aluno;
+
+create table aluno (
+id_aluno int(4) not null auto_increment,
+nome varchar(30),
+profissao varchar(30),
+nascimento date,
+sexo enum('M', 'F'), 
+peso decimal(5,2),
+altura decimal(3,2),
+nacionalidade varchar(20) default 'Brasil',
+primary key (id_aluno)
+)default charset=utf8;
+
+insert into aluno
+(nome, profissao, nascimento, sexo, peso, altura, nacionalidade)
+values
+('Larissa', 'Designer', '2005/11/18', 'F', '45.5', '1.75', 'Brasil');
+
+insert into aluno values
+(default, 'Nayara', 'Advogada', '2007/05/28', 'F', '44.5', '1.85', default),
+(default, 'Helena', 'cabeleleira', '2009/02/27', 'F', '50.5', '1.95', default);
+
+select * from aluno;
+
+show databases;
+show tables;
+describe aluno;
+desc aluno;
